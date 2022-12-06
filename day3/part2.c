@@ -77,6 +77,7 @@ int main() {
 				}
 			}
 
+			/* Done. Calculate Score */
 			for(uint8_t i = 0; i < MAX_CHARS; i++) {
 				if(freq1[i] > 0 && freq2[i] > 0 && freq3[i] > 0){
 					totalScore += (i + 1);
@@ -84,6 +85,7 @@ int main() {
 				}
 			}
 
+			/* Reset for Next Group */
 			lineNumber = 0;
 			memset(line1, 0, stringSize);
 			memset(line2, 0, stringSize);
